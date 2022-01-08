@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import Landing from './Landing';
+import Navbar from './Navbar';
 
 class Portfolio extends Component {
     render() {
         return (
             <div>
-                lalit kaim pippal
+                <Navbar/>
+                <Landing/>
             </div>
         );
     }
