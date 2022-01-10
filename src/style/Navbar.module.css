@@ -4,8 +4,8 @@
     top: 0px;
 }
 @keyframes slow {
-    from {opacity: 0;}
-    to {opacity: 1}
+    from {height: 0px;}
+    to {height:290px}
 }
 .navAnimation_1{
     justify-content: right!important;
@@ -15,18 +15,31 @@
     top: 56px;
     left: 0px;
     width: 100%;
-    animation: slow 1s linear!important;
-    opacity: 1;
+    animation: slow 0.3s linear!important;
+    height: max-content;
+    overflow: hidden;
     box-shadow: none!important;
+    background-color: white;
 }
 .navAnimation > button{
     margin: 3px;
     display: block!important;
     box-shadow: none!important;
+    color: white;
+    border: 1px solid while;
 }
 .navAnimation > button:focus{
     box-shadow: none!important;
 }
 .navAnimation > button:hover{
     color: rgb(163, 163, 163);
+    animation: buttonAnimation 0.5s linear;
+}
+@keyframes buttonAnimation {
+    from{
+        border: none;
+    }
+    to{
+        border: 1px solid white;
+    }
 }

@@ -1,6 +1,6 @@
 import React, { cloneElement, Component } from 'react';
 import classes from '../style/Landing.module.css'
-import first from './../first.jpg';
+import code from '../vid/code.mp4'
 
 class Landing extends Component {
     constructor(props){
@@ -8,24 +8,37 @@ class Landing extends Component {
         this.state = {
         }
     }
+    componentDidMount(){
+        var a=document.getElementById('vmw');
+        var b=document.getElementById('arw');
+        a.onmouseover=()=>{
+            b.style.transform="rotateZ(90deg)";
+            b.style.transition="all 0.5s";
+        }
+        a.onmouseout=()=>{
+            b.style.transform="rotateZ(0deg)";
+            b.style.transition="all 0.5s";
+        }
+    }
     render() {
         return (
-            <div className='container' style={{position:"relative"}}>
-                <div className={classes.circle}></div>
-                <div className={classes.oval}></div>
-                <div className={'row '+classes.direction}>
-                    <div className='col-lg-6 col-md-6 col-sm-12 col-xs-12' style={{alignSelf:"center"}}>
-                        <div>
-                            <p>Welcome</p>
-                            <h1>I'm Lalit Kaim</h1>
-                            <p>m different categories like argumentative essays, essays on technology, environment essays for students from 5th, 6th, 7th, 8th grades. Following list of essay topics are for all – from kids to college students. </p>
+            <>
+                <video autoplay="autoplay" muted loop controls='' defaultMuted className={classes.myVideo}>
+                    <source src={code} type="video/mp4"/>
+                </video>
+                <div className={classes.main1} id="lalitkaim">
+                    <div className={classes.frontdiv}>
+                        <h1>Hello, I'm <span className={classes.lalit}>Lalit</span>.</h1>
+                        <h1>I'm a Programmer, I've no life.</h1>
+                        <p><span className={classes.lalit}><b>Eat Sleep Code Repeat</b></span></p>
+                        <div className={"wow fadeInUp "+classes.vmwdiv} data-wow-duration="1s" data-wow-delay="0s">
+                            <a className={classes.vmw} id="vmw" href="#about">View my work&nbsp;
+                                <i className="fas fa-arrow-right" id="arw"></i> 
+                            </a>
                         </div>
                     </div>
-                    <div className='col-lg-6 col-md-6 col-sm-12 col-xs-12' style={{padding:"30px"}}>
-                        <img className={'img-fluid '+classes.image} style={{position:"relative", zIndex:"-10"}} src={first} alt="first"/>
-                    </div>
                 </div>
-            </div>
+            </>
         );
     }
 }
