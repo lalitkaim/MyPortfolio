@@ -15,11 +15,15 @@ class Projects extends Component{
 
     render(){
         const desc = {
-            kaimshare : "This is kaimshare",
-            quiddle : "This is quiddle",
-            ditto : "This is ditto",
-            crosso : "This is crosso",
-            letzdo : "This is letzdo"
+            kaimshare : 'Created a file sharing website to transfer files without'+
+            'requiring any login information.'+
+            '\nEnhanced loading time with the LCP (Largest Contentful Paint) as 950ms.',
+            quiddle : 'Built a functional real-time messaging application using modern technology.'+
+            'Designed for the sharing of messages, images, and files.',
+            ditto : 'Designed and built an interactive and flexible website for stock photos sharing.'+
+            'Implemented pagination and improved loading of pages with 20%.',
+            crosso : "This is crosso to play.",
+            letzdo : "This is letzo to store todo list."
         }
         const links = {
             kaimshare : "https://kaim-share.web.app",
