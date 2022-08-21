@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import About from './About';
+import Experience from './Experience';
 import Landing from './Landing';
 import Navbar from './Navbar';
 import Projects from './Projects';
@@ -20,6 +21,7 @@ class Portfolio extends Component {
                 <Landing/>
                 <About/>
                 <Projects/>
+                <Experience/>
             </div>
         );
     }
