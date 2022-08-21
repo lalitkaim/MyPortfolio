@@ -1,7 +1,9 @@
 .topAnimation{
     height: max-content;
-    position: sticky;
+    position: absolute;
+    width: 100%;
     top: 0px;
+    z-index: 100;
 }
 @keyframes slow {
     from {height: 0px;}
@@ -9,6 +11,7 @@
 }
 .navAnimation_1{
     justify-content: right!important;
+    display: none;
 }
 .navAnimation_2{
     position: absolute;
@@ -25,21 +28,13 @@
     margin: 3px;
     display: block!important;
     box-shadow: none!important;
-    color: white;
+    color: rgb(227, 27, 109);
     border: 1px solid while;
 }
 .navAnimation > button:focus{
     box-shadow: none!important;
 }
 .navAnimation > button:hover{
-    color: rgb(163, 163, 163);
-    animation: buttonAnimation 0.5s linear;
-}
-@keyframes buttonAnimation {
-    from{
-        border: none;
-    }
-    to{
-        border: 1px solid white;
-    }
+    border: 1px solid white;
+    color: rgb(227, 27, 109);
 }

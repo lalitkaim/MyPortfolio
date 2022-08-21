@@ -1,0 +1,21 @@
+.myDiv{
+    position: relative;
+    margin: 0px;
+}
+.lalit{
+    color: rgb(227, 27, 109);
+}
+.myImageDiv>img{
+    width: 300px;
+    border-radius: 100%;
+}
+.profileIcons>a>img{
+    width: 50px;
+    padding-right: 5px;
+}
+
+@media (max-width: 575.98px) {
+    .myDetailDiv{
+        text-align: center;
+    }
+}
