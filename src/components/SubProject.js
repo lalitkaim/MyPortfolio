@@ -1,6 +1,5 @@
 import { Component } from "react";
 
-
 class SubProject extends Component{
     constructor(props){
         super(props)
@@ -9,9 +8,9 @@ class SubProject extends Component{
     render(){
         return <>
             <div>
-                <figure className="imghvr-reveal-right">
+                <figure className="imghvr-reveal-right" style={{backgroundColor:"#2d2d2d"}}>
                     <img src={this.props.img} className="img-fluid"/>
-                    <figcaption>
+                    <figcaption style={{backgroundColor:"#2d2d2d"}}>
                         <h3>{this.props.name}</h3>
                         <p>{this.props.desc}</p>
                     </figcaption>

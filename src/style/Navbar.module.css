@@ -24,17 +24,20 @@
     box-shadow: none!important;
     background-color: white;
 }
-.navAnimation > button{
+.navAnimation > audio{
     margin: 3px;
     display: block!important;
     box-shadow: none!important;
     color: rgb(227, 27, 109);
     border: 1px solid while;
 }
-.navAnimation > button:focus{
+.navAnimation > a:focus{
     box-shadow: none!important;
 }
-.navAnimation > button:hover{
+.navAnimation > a{
+    color: rgb(227, 27, 109);
+}
+.navAnimation > a:hover{
     border: 1px solid white;
     color: rgb(227, 27, 109);
 }

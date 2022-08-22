@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import classes from '../style/Navbar.module.css'
+import Switch from "react-switch";
+
 
 function resizeHandler(){
     if(window.innerWidth>=992){
@@ -11,12 +13,17 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state ={
-            toggle : false
+            toggle : false,
+            isDark:false
         }
     }
     
     toggleHander = ()=>{
         this.setState({toggle : !this.state.toggle})
+    }
+
+    handleChange = ()=>{
+        this.setState({ isDark   : !this.state.isDark});
     }
 
     componentDidMount(){
@@ -29,18 +36,20 @@ class Navbar extends Component {
             <div className={"continer "+classes.topAnimation}>
                 <nav className="navbar navbar-expand-lg navbar-light bgight">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#" style={{color: "rgb(227, 27, 109)"}}>Navbar</a>
+                        <label>
+                            {/* <Switch onChange={this.handleChange} checked={this.state.isDark} onColor="#525252" offColor="#ffffff" offHandleColor="#000000" onHandleColor="#ffffff"/> */}
+                        </label>
                         <button className="navbar-toggler" onClick={this.toggleHander}type="button">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div id="navBar" className={"collapse navbar-collapse "+(showNav ? 'show ' : ' ')+(showNav ? classes.navAnimation_2 : classes.navAnimation_1)+" "+classes.navAnimation+" "+classes.btnDiv}>
-                            <button className="btn">Home</button>
-                            <button className="btn">About</button>
-                            <button className="btn">Service</button>
-                            <button className="btn">Work</button>
-                            <button className="btn">Resume</button>
-                            <button className="btn">Blog</button>
-                            <button className="btn">Contact</button>
+                            <a className="btn">Home</a>
+                            <a className="btn" href="#about">About</a>
+                            <a className="btn" href="#skills">Skills</a>
+                            <a className="btn" href="#work">Work</a>
+                            <a className="btn" href="#resume">Resume</a>
+                            <a className="btn" href="#blog">Blog</a>
+                            <a className="btn" href="#contact">Contact</a>
                         </div>
                     </div>
                 </nav>
