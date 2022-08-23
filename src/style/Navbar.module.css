@@ -21,6 +21,7 @@
     animation: slow 0.3s linear!important;
     height: max-content;
     overflow: hidden;
+    display: grid;
     box-shadow: none!important;
     background-color: white;
 }

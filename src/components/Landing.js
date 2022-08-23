@@ -6,8 +6,6 @@ import FrontProfile from './FrontProfile';
 class Landing extends Component {
     constructor(props){
         super(props);
-        // this.state = {
-        // }
     }
     componentDidMount(){
         var a=document.getElementById('vmw');

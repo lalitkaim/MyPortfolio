@@ -1,5 +1,6 @@
 import classes from '../style/About.module.css'
 import lalitkaim from '../lalitkaim.jpg'
+import lalit from '../lalitk.jpeg'
 import Projects from './Projects';
 import Education from './Education';
 import Language from './Language';
@@ -42,7 +43,7 @@ function About(props){
                 </div>
                 <div className="col-lg-4 col-md-5 col-sm-12 col-12">
                     <div className="section myBlock p-4">
-                        <img src={lalitkaim} className="img-fluid"/>
+                        <img src={lalit} className="img-fluid"/>
                     </div>
                 </div>
             </div>

@@ -37,7 +37,6 @@ class Navbar extends Component {
                 <nav className="navbar navbar-expand-lg navbar-light bgight">
                     <div className="container-fluid">
                         <label>
-                            {/* <Switch onChange={this.handleChange} checked={this.state.isDark} onColor="#525252" offColor="#ffffff" offHandleColor="#000000" onHandleColor="#ffffff"/> */}
                         </label>
                         <button className="navbar-toggler" onClick={this.toggleHander}type="button">
                             <span className="navbar-toggler-icon"></span>

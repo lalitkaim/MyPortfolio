@@ -1,6 +1,10 @@
 import { Component } from "react";
 import SubProject from './SubProject'
 import kaimshare from '../kaimshare.png'
+import quiddle from '../quiddle.png'
+import ditto from '../ditto.png'
+import crosso from '../crosso.png'
+import letzdo from '../letzdo.png'
 
 class Projects extends Component{
     constructor(props){
@@ -36,10 +40,10 @@ class Projects extends Component{
                         </div>
                         <div className="col-12">
                             <div className="row">
-                                <div className="col-6"><SubProject name="Quiddle" img={kaimshare} desc={desc.quiddle} link={links.quiddle}/></div>
-                                <div className="col-6"><SubProject name="Ditto" img={kaimshare} desc={desc.ditto} link={links.ditto}/></div>
-                                <div className="col-6"><SubProject name="Crosso" img={kaimshare} desc={desc.crosso} link={links.crosso}/></div>
-                                <div className="col-6"><SubProject name="LetzDo" img={kaimshare} desc={desc.letzdo} link={links.letzdo}/></div>
+                                <div className="col-6"><SubProject name="Quiddle" img={quiddle} desc={desc.quiddle} link={links.quiddle}/></div>
+                                <div className="col-6"><SubProject name="Ditto" img={ditto} desc={desc.ditto} link={links.ditto}/></div>
+                                <div className="col-6"><SubProject name="Crosso" img={crosso} desc={desc.crosso} link={links.crosso}/></div>
+                                <div className="col-6"><SubProject name="LetzDo" img={letzdo} desc={desc.letzdo} link={links.letzdo}/></div>
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ class SubProject extends Component{
     render(){
         return <>
             <div>
-                <figure className="imghvr-reveal-right" style={{backgroundColor:"#2d2d2d"}}>
+                <figure className="imghvr-reveal-right" style={{backgroundColor:"#2d2d2d", border:"2px solid white"}}>
                     <img src={this.props.img} className="img-fluid"/>
                     <figcaption style={{backgroundColor:"#2d2d2d"}}>
                         <h3>{this.props.name}</h3>
