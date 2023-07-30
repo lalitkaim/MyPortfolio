@@ -9,6 +9,7 @@ import Experience from './Experience';
 import Contact from './Contact';
 import Skill from './Skill';
 import Blog from './Blog';
+import React from "react";
 
 function About(props){
     const a = [95,70,80,70,80,70,90];
@@ -30,12 +31,14 @@ function About(props){
             <div className="row">
                 <div className="col-lg-8 col-md-7 col-sm-12 col-12 mb-4">
                     <div className="section p-4 myBlock" id="about">
-                        <h2>Lalit</h2>
-                        <h4>Software Engineer</h4>
-                        <p>I'm a software engineer specialised in frontend and backend development 
-                        for complex scalable web apps. I write about software development on my blog. 
-                        Want to know how I may help your project? Check out my project portfolio 
-                        and online resume.</p>
+                        {/* <h2>Lalit</h2> */}
+                        {/* <h4>Software Engineer</h4> */}
+                        <p><span className={classes.firstLetter} style={{color:"#e31b6d"}}>H</span>ello, and welcome to my Software Engineer <span style={{color:"#e31b6d"}}>Portfolio</span>! My name is Lalit, 
+                            and I am a passionate and dedicated software engineer with a strong background 
+                            in designing and developing innovative software solutions. Here, you will find a 
+                            collection of projects and experiences that showcase my technical skills, problem-solving abilities, 
+                            and enthusiasm for creating cutting-edge applications. I invite you to explore my work and get to 
+                            know more about my journey as a software engineer.</p>
                         <div id="resume">
                             <a className="btn" style={{backgroundColor:"#e31b6d", color:"white"}} href="#">View Resume</a>
                         </div>
@@ -52,9 +55,11 @@ function About(props){
                 <div className="col-12">
                     <div className="section myBlock p-4">
                         <h2>What I do?</h2>
-                        <p>I have more than 1 years' experience in building software, currently working at Cognam Technologies, New Delhi. 
-                            Below is a quick overview of my main technical skill sets and technologies I use. 
-                            Want to find out more about my experience? Check out my online <a href="#" style={{textDecoration:"none", color:"#e31b6d"}}>resume</a> and project <a href="#" style={{textDecoration:"none", color:"#e31b6d"}}>portfolio</a>.</p>
+                        <p>I am a software engineer with over <b style={{color:"#e31b6d"}}>2+ years</b> of experience and holds Master's degree in Computer Science, 
+                            currently working at <a href="https://www.qualcomm.com/" target="_blank" style={{textDecoration:"none"}}><b style={{color:"#e31b6d"}}>Qualcomm</b></a>, Hyderabad on GSM technology. My journey in software development began with a love for 
+                            solving puzzles and a fascination for technology. Over the years, I have honed my skills in various
+                             programming languages, web technologies, and software development methodologies, allowing me to
+                              approach challenges with creativity and efficiency.</p>
                     </div>
                 </div>
             </div>
@@ -67,14 +72,15 @@ function About(props){
                             <p><b>Languages : </b>Java, C</p>
                             <p><b>Frameworks : </b>Spring Boot, Bootstrap</p>
                             <p><b>Libraries : </b>ReactJs</p>
-                            <p><b>Tools : </b>Git, Bootstrap</p>
-                            <p><b>Editors : </b>Eclipse, VS Code</p>
-                            <p><b>Operating System : </b>Ubuntu, Linux, Windows</p>
+                            <p><b>Tools : </b>Git, Perforce</p>
+                            <p><b>Editors : </b>VS Code, Source Insight, Eclipse, IntelliJ etc.</p>
+                            <p><b>Operating System : </b>Windows, Linux</p>
                         </div>
-                        <h5>Experience</h5>
+                        {/* <h5>Experience</h5> */}
+                        <hr/>
                         <div>
-                            <p><b>Total Exp.</b> 1+ Year</p>
-                            <p><b>Currect Employer-</b> Cognam Technologies</p>
+                            <p><b>Total Experience : </b> 2+ Years</p>
+                            <p><b>Current Employer : </b> <a href="https://www.qualcomm.com/" target="_blank" style={{textDecoration:"none",color:"#e31b6d"}}>Qualcomm</a></p>
                         </div>
                     </div>
                     <br/>

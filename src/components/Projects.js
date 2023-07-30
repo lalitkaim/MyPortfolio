@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import SubProject from './SubProject'
 import kaimshare from '../kaimshare.png'
 import quiddle from '../quiddle.png'

@@ -1,10 +1,12 @@
 import classes from '../style/FrontProfile.module.css'
 import lalitkaim from "../lalitkaim.jpg"
+import lalitkaim_1 from "../lalitkaim_1.jpg"
 import github from "../github.svg"
 import linkedin from "../linkedin.svg"
 import hackerrank from "../hackerrank.svg"
 import blogger from "../blogger.svg"
 import email from "../email.svg"
+import React from "react";
 
 
 function FrontProfile(){
@@ -15,6 +17,7 @@ function FrontProfile(){
                 <div className="row">
                     <div className={"col-lg-4 col-md-6 col-sm-6 col-12 "+classes.myImageDiv}>
                         <img src={lalitkaim} className={"img-fluid"}/>
+                        {/* <img src={lalitkaim_1} className={"img-fluid"}/> */}
                     </div>
                     <div className={"col-lg-8 col-md-6 col-sm-6 col-12 "+classes.myDetailDiv}>
                         <h1><span className={classes.lalit}>Lalit</span></h1>

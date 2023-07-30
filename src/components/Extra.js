@@ -1,3 +1,5 @@
+import React from "react";
+
 function Extra(){
     return <>
         <div className="section p-4 myBlock">

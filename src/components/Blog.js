@@ -1,3 +1,5 @@
+import React from "react";
+
 function Blog(){
     return<>
         <div className="section myBlock p-4" id="blog">
